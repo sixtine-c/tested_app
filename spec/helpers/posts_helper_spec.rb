@@ -1,6 +1,5 @@
 require 'rails_helper'
 include PostsHelper
-
 RSpec.describe PostsHelper, type: :helper do
   it 'assigns a user to a post' do
     creator = User.first_or_create!(email: 'dean@example.com', password: 'password', password_confirmation: 'password')
